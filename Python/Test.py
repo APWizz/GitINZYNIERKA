@@ -1,7 +1,7 @@
 import vtk
 
 # Ścieżka do pliku OBJ
-obj_file_path = r"C:\Users\adria\Desktop\Git\output.obj"
+obj_file_path = r"C:\Users\adria\Desktop\Git 1\output.obj"
 
 # Wczytaj plik OBJ
 reader = vtk.vtkOBJReader()
