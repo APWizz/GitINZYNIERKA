@@ -1,0 +1,24 @@
+Jeśli chcesz najpierw sporządzić geometrię w AutoCAD, a następnie użyć jej w PyFoam do symulacji numerycznej, oto ogólny przewodnik, jak to zrobić:
+
+### 1. Stwórz geometrię w AutoCAD:
+
+1. Rozpocznij AutoCAD i użyj odpowiednich narzędzi do stworzenia swojej geometrii.
+2. Upewnij się, że twoja geometria jest zgodna z wymaganiami dla symulacji numerycznej, na przykład upewnij się, że jest to zamknięta, wodoodporna siatka i że nie ma nieciągłości czy podobnych problemów.
+
+### 2. Eksportuj geometrię z AutoCAD:
+
+1. Po zakończeniu projektowania geometrii, wybierz opcję eksportu lub zapisu w AutoCAD.
+2. Wybierz odpowiedni format pliku, który można wczytać do PyFoam. Format DXF może być dobrym wyborem, ponieważ jest powszechnie obsługiwany i można go łatwo wczytać do Pythona.
+
+### 3. Wczytaj geometrię do PyFoam:
+
+1. Wykorzystaj bibliotekę Pythona, taką jak `ezdxf`, do wczytania pliku DXF zawierającego geometrię.
+2. Przekonwertuj wczytaną geometrię do formatu zrozumiałego dla PyFoam. Możesz wykorzystać różne metody, w zależności od preferencji i potrzeb, na przykład możesz przekonwertować do formatu STL, który jest powszechnie używany w symulacjach numerycznych.
+
+### 4. Przeprowadź symulację w PyFoam:
+
+1. Wykorzystaj PyFoam do przeprowadzenia symulacji numerycznej na wczytanej geometrii.
+2. Skonfiguruj parametry symulacji, takie jak warunki brzegowe, właściwości materiałowe itp.
+3. Uruchom symulację i analizuj wyniki.
+
+Podsumowując, możesz użyć AutoCAD do sporządzenia geometrii, a następnie wykorzystać Pythona i PyFoam do wczytania tej geometrii, przekonwertowania jej do formatu zgodnego z PyFoam i przeprowadzenia symulacji numerycznej. Ważne jest, abyś zadbał o to, aby geometria była odpowiednio przygotowana do symulacji i abyś mógł łatwo wczytać ją do PyFoam.

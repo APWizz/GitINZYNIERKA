@@ -1,0 +1,17 @@
+import meshio
+
+def convert_stl_to_obj(input_stl_file, output_obj_file):
+    # Wczytaj plik STL
+    mesh = meshio.read(input_stl_file)
+    
+    # Zapisz siatkę do formatu OBJ
+    meshio.write(output_obj_file, mesh, file_format='obj')
+
+# Ścieżka do pliku STL wejściowego
+input_stl_file = r"C:\Users\adria\Desktop\Inzynierka\Pręt_test.stl"
+
+# Ścieżka do pliku OBJ wyjściowego
+output_obj_file = 'output.obj'
+
+# Wywołaj funkcję konwersji
+convert_stl_to_obj(input_stl_file, output_obj_file)
